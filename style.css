@@ -232,7 +232,7 @@ html, body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 1%;
+    padding-right: 3%;
     overflow: hidden;
 }
 
@@ -328,7 +328,7 @@ html, body {
     position: relative; 
     z-index: 4;
     text-align: right;
-    margin-right: -15px;
+    margin-right: -10px;
 }
 
 .main-title {
