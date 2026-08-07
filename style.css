@@ -74,6 +74,13 @@ body {
   visibility: visible;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .side-menu {
   position: fixed;
   top: 0;
@@ -278,16 +285,17 @@ body {
 } 
 
 .main-logo {
-  width: 320px; 
+  width: 450px; 
+  max-width: 90vw;
   height: auto;
   display: block;
   margin-left: auto; 
   mix-blend-mode: multiply;
-  transition: transform 1.2s cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .main-logo:hover {
-  transform: scale(1.03);
+  transform: scale(2);
 }
     
 .main-logo.active-spin {
