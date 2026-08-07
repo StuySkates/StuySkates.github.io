@@ -1,1 +1,1 @@
-# StuySkates.github.io
+# StuySkates
