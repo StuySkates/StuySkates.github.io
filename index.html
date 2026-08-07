@@ -59,21 +59,31 @@
       const menuOverlay = document.getElementById('menuOverlay');
       const mainLogo = document.getElementById('mainLogo');
 
+        function triggerLogoSpin() {
+      if (!mainLogo) return;
+      mainLogo.classList.remove('is-spinning');
+      void mainLogo.offsetWidth;
+      mainLogo.classList.add('is-spinning');
+    }
+
   function openMenu() {
     sideMenu.classList.add('active');
     menuOverlay.classList.add('active');
-    if (mainLogo) {
-      mainLogo.classList.add('active-spin');
+    triggerLogoSpin();
     }
   }
 
   function closeMenu() {
     sideMenu.classList.remove('active');
     menuOverlay.classList.remove('active');
-    if (mainLogo) {
-      mainLogo.classList.remove('active-spin');
     }
   }
+
+    if (mainLogo) {
+      mainLogo.addEventListener('animationend', () => {
+        mainLogo.classList.remove('is-spinning');
+      });
+    }
 
 if (logoToggle) logoToggle.addEventListener('click', openMenu);
       if (closeBtn) closeBtn.addEventListener('click', closeMenu);
