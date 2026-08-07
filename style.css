@@ -285,7 +285,7 @@ html, body {
 } 
 
 .main-logo {
-  width: 450px; 
+  width: 430px; 
   max-width: 90vw;
   height: auto;
   display: block;
@@ -295,7 +295,7 @@ html, body {
 }
 
 .main-logo:hover {
-  transform: scale(2);
+  transform: scale(1.6);
 }
     
 .main-logo.active-spin {
