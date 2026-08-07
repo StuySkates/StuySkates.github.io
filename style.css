@@ -50,10 +50,10 @@ body {
 }
 
 .nav-btn {
-  color: #111111;
+  color: #0d233a;
   text-decoration: none; 
-  font-size: 1.4rem; 
-  font-weight: 600;
+  font-size: 2rem; 
+  font-weight: 700;
   transition: color 0.2s ease, border-bottom 0.2s ease;
   padding-bottom: 4px;
 }
@@ -67,16 +67,73 @@ body {
 
 
 .main {
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 10%;
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('hero-bg.jpg') center/cover no-repeat;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10%;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('hero-bg.jpg') center/cover no-repeat;
+    overflow: hidden;
 }
 
+.snowflakes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    pointer-events: none;
+    z-index: 1;
+}
+.snowflake {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: -10%;
+  animation-name: snowflakes-fall, snowflakes-shake;
+  animation-duration: 10s, 3s;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-play-state: running, running;
+  opacity: 0.8;
+}
+.snowflake:nth-of-type(1)  { left: 10%; animation-delay: 0s, 0s; }
+.snowflake:nth-of-type(2)  { left: 20%; animation-delay: 1s, 1s; font-size: 2rem; }
+.snowflake:nth-of-type(3)  { left: 30%; animation-delay: 6s, 0.5s; }
+.snowflake:nth-of-type(4)  { left: 40%; animation-delay: 4s, 2s; font-size: 2.2rem; }
+.snowflake:nth-of-type(5)  { left: 50%; animation-delay: 2s, 1s; }
+.snowflake:nth-of-type(6)  { left: 60%; animation-delay: 7s, 1.5s; font-size: 1.8rem; }
+.snowflake:nth-of-type(7)  { left: 70%; animation-delay: 2.5s, 0s; }
+.snowflake:nth-of-type(8)  { left: 80%; animation-delay: 1s, 1.5s; font-size: 2.5rem; }
+.snowflake:nth-of-type(9)  { left: 90%; animation-delay: 3s, 1.5s; }
+.snowflake:nth-of-type(10) { left: 95%; animation-delay: 5s, 2s; }
+
+@keyframes snowflakes-fall {
+  0% {
+    top: -10%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes snowflakes-shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80px);
+  }
+}
+
+
 .main-content {
-  text-align: right;
+    position: relative; 
+    z-index: 2;
+    text-align: right;
 }
 
 .main-title {
