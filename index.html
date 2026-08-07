@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header class="navbar">
     <div class="logo">
       <a href="index.html">
@@ -25,18 +24,18 @@
             <a href="resources.html">Resources</a>
         </nav>
     </aside>
-
-    <section id="contact" class="content-section">
-        <h2>Contact Us</h2>
-    </section>
-
 <main id="home" class="main">
     <video autoplay loop muted playsinline class="main-video">
     <source src="background.mp4" type="video/mp4">
   </video>
     <div class="film-strip-container">
     <img src="filmstrip.png" alt="Film Strip Overlay" class="film-strip-img">
-  </div>
+        </div>
+    <div class="main-content">
+        <button class="logo-toggle-btn" id="logoToggle" type="button" aria-label="Open Menu">
+            <img src="StuySkatesLogo.png" alt="Stuy Skates Big Logo" class="main-logo" id="mainLogo">
+        </button>
+        </div> 
     <div class="snowflakes" aria-hidden="true">
     <div class="snowflake">❅</div>
     <div class="snowflake">❆</div>
@@ -49,16 +48,12 @@
     <div class="snowflake">❅</div>
     <div class="snowflake">❆</div>
   </div>
-    
-    <div class="main-content">
-        <button class="logo-toggle-btn" id="logoToggle" type="button" aria-label="Open Menu">
-            <img src="StuySkatesLogo.png" alt="Stuy Skates Big Logo" class="main-logo" id="mainLogo">
-        </button>
-    </div>
 </main>
+</body>
 
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('DOMContentLoaded', () => {
+        window.scrollTo(0,0);
       const menuToggle = document.getElementById('menuToggle');
       const closeBtn = document.getElementById('closeBtn');
       const sideMenu = document.getElementById('sideMenu');
@@ -68,23 +63,18 @@
   function openMenu() {
     sideMenu.classList.add('active');
     menuOverlay.classList.add('active');
-    if (mainLogo) {
-      mainLogo.classList.add('active-spin');
-    }
+    if (mainLogo) mainLogo.classList.add('is-spinning');
   }
 
   function closeMenu() {
     sideMenu.classList.remove('active');
     menuOverlay.classList.remove('active');
-    if (mainLogo) {
-      mainLogo.classList.remove('active-spin');
+    if (mainLogo) mainLogo.classList.remove('active-spin');
     }
-  }
-
-if (logoToggle) logoToggle.addEventListener('click', openMenu);
-      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
-      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+  
+    if (logoToggle) logoToggle.addEventListener('click', openMenu);
+    if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+    if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
     });
   </script>
-</body>
 </html>
