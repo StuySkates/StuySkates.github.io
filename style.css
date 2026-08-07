@@ -357,6 +357,9 @@ html, body {
   padding: 0;
   cursor: pointer;
   outline: none;
+    display: inline-block;
+    pointer-events: auto;
+    transition: transform 0.25s ease-in-out; 
 } 
 
 .main-logo {
@@ -370,9 +373,9 @@ html, body {
 }
 
 .main-logo:hover {
-  transform: scale(1.0);
+  transform: scale(1.05);
 }
     
-.main-logo.active-spin {
-  transform: rotate(360deg);
+.hero-logo.is-spinning {
+  animation: spin360 1s ease-in-out;
 }
