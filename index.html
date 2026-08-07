@@ -12,16 +12,23 @@
         <img src="StuySkatesLogo.png" alt="Stuy Skates Logo">
       </a>
     </div>
-    
-<nav class="nav-links">
-  <a href="index.html" class="active">Home</a>
-  <a href="board.html">Board</a>
-  <a href="photos.html">Photos</a>
-  <a href="resources.html">Resources</a>
-  <a href="contact">Contact</a>
-</nav>
   </header>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <aside class="side-menu" id="sideMenu">
+        <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+        <nav class="side-nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="board.html">Board</a>
+            <a href="photos.html">Photos</a>
+            <a href="resources.html">Resources</a>
+        </nav>
+    </aside>
     
+    <section id="contact" class="content-section">
+        <h2>Contact Us</h2>
+    </section>
+
+        
 <main id="home" class="main">
     <div class="snowflakes" aria-hidden="true">
     <div class="snowflake">❅</div>
@@ -37,14 +44,12 @@
   </div>
     
     <div class="main-content">
-        <img src="StuySkatesLogo.png" alt="Stuy Skates Logo" class="main-logo" id="mainLogo">
+        <button class="logo-toggle-btn" id="logoToggle" aria-label="Open Menu">
+            <img src="StuySkatesLogo.png" alt="Stuy Skates Logo" class="main-logo" id="mainLogo">
+        </button>
     </div>
 </main>
-
-  <section id="contact" class="content-section">
-    <h2>Contact Us</h2>
-  </section>
-
+    
 </body>
 
 <script>
