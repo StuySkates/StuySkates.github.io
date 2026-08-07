@@ -20,7 +20,6 @@ body {
   color: #ffffff;
 }
 
-/* Navbar Layout */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -85,7 +84,6 @@ body {
   margin-top: 10px;
 }
 
-/* Placeholder Sections for Scrolling Targets */
 .content-section {
   min-height: 80vh;
   padding: 120px 60px 40px 60px;
