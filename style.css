@@ -232,7 +232,7 @@ html, body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 8%;
+    padding-right: 1%;
     overflow: hidden;
 }
 
