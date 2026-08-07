@@ -178,10 +178,10 @@ html, body {
 
 .film-strip-container {
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
+  top: -5%;
+  bottom: -5%;
+  left: -20px;
+  height: 110%;
   z-index: 2;
   pointer-events: none;
   display: flex;
@@ -189,12 +189,13 @@ html, body {
 }
 
 .film-strip-img {
-  height: 100%; 
-  width: auto;
-  max-wdth: none;
-  margin-left: 0%; 
-  object-fit: cover;
-  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.4));
+    height: 100%; 
+    width: auto;
+    object-fit: cover;
+    filter: drop-shadow(-10px 15px 25px rgba(0, 0, 0, 0.7));
+    opacity: 0.95; 
+    transform: rotate(-2deg) scale(1.05); 
+    transform-origin: top left;
 }
 
 .snowflakes {
