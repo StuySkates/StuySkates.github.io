@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StuySkates</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -9,7 +11,7 @@
     <header class="navbar">
     <div class="logo">
       <a href="index.html">
-        <img src="StuySkatesLogo.png" alt="Stuy Skates Logo">
+        <img src="StuySkatesLogo.png" alt="Stuy Skates Little Logo">
       </a>
     </div>
   </header>
@@ -23,12 +25,11 @@
             <a href="resources.html">Resources</a>
         </nav>
     </aside>
-    
+
     <section id="contact" class="content-section">
         <h2>Contact Us</h2>
     </section>
 
-        
 <main id="home" class="main">
     <div class="snowflakes" aria-hidden="true">
     <div class="snowflake">❅</div>
@@ -44,20 +45,19 @@
   </div>
     
     <div class="main-content">
-        <button class="logo-toggle-btn" id="logoToggle" aria-label="Open Menu">
-            <img src="StuySkatesLogo.png" alt="Stuy Skates Logo" class="main-logo" id="mainLogo">
+        <button class="logo-toggle-btn" id="logoToggle" type="button" aria-label="Open Menu">
+            <img src="StuySkatesLogo.png" alt="Stuy Skates Big Logo" class="main-logo" id="mainLogo">
         </button>
     </div>
 </main>
-    
-</body>
 
 <script>
-  const menuToggle = document.getElementById('menuToggle');
-  const closeBtn = document.getElementById('closeBtn');
-  const sideMenu = document.getElementById('sideMenu');
-  const menuOverlay = document.getElementById('menuOverlay');
-  const mainLogo = document.getElementById('mainLogo');
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const closeBtn = document.getElementById('closeBtn');
+      const sideMenu = document.getElementById('sideMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+      const mainLogo = document.getElementById('mainLogo');
 
   function openMenu() {
     sideMenu.classList.add('active');
@@ -75,9 +75,10 @@
     }
   }
 
-  menuToggle.addEventListener('click', openMenu);
-  closeBtn.addEventListener('click', closeMenu);
-  menuOverlay.addEventListener('click', closeMenu);
-</script>
+if (logoToggle) logoToggle.addEventListener('click', openMenu);
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+    });
+  </script>
 </body>
 </html>
