@@ -48,24 +48,33 @@
 </body>
 
 <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const closeBtn = document.getElementById('closeBtn');
-    const sideMenu = document.getElementById('sideMenu');
-    const menuOverlay = document.getElementById('menuOverlay');
+  const menuToggle = document.getElementById('menuToggle');
+  const closeBtn = document.getElementById('closeBtn');
+  const sideMenu = document.getElementById('sideMenu');
+  const menuOverlay = document.getElementById('menuOverlay');
+  const mainLogo = document.getElementById('mainLogo');
 
-    function openMenu() {
-      sideMenu.classList.add('active');
-      menuOverlay.classList.add('active');
+  function openMenu() {
+    sideMenu.classList.add('active');
+    menuOverlay.classList.add('active');
+    
+    if (mainLogo) {
+      mainLogo.classList.add('active-spin');
     }
+  }
 
-    function closeMenu() {
-      sideMenu.classList.remove('active');
-      menuOverlay.classList.remove('active');
+  function closeMenu() {
+    sideMenu.classList.remove('active');
+    menuOverlay.classList.remove('active');
+    
+    if (mainLogo) {
+      mainLogo.classList.remove('active-spin');
     }
+  }
 
-    menuToggle.addEventListener('click', openMenu);
-    closeBtn.addEventListener('click', closeMenu);
-    menuOverlay.addEventListener('click', closeMenu);
-  </script>
+  menuToggle.addEventListener('click', openMenu);
+  closeBtn.addEventListener('click', closeMenu);
+  menuOverlay.addEventListener('click', closeMenu);
+</script>
 </body>
 </html>
