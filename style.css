@@ -663,6 +663,11 @@ body.contact-page {
   align-items: flex-start;
 }
 
+.contact-form textarea {
+  resize: horizontal !important;
+  max-width: 100% !important;
+}
+
 .send-btn {
   margin-top: 10px;
   background-color: #0284c7;
