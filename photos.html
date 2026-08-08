@@ -48,20 +48,47 @@
       </div> -->
     </div>
   </main>
-
+  
+<div id="imageModal" class="modal">
+    <span class="modal-close" id="modalClose">&times;</span>
+    <img class="modal-content" id="fullImage" alt="Expanded Photo">
+  </div>
+  
 <script>
     document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Side Menu Logic
       const closeBtn = document.getElementById('closeBtn');
       const sideMenu = document.getElementById('sideMenu');
       const menuOverlay = document.getElementById('menuOverlay');
 
       function closeMenu() {
-        sideMenu.classList.remove('active');
-        menuOverlay.classList.remove('active');
+        if (sideMenu) sideMenu.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
       }
 
       if (closeBtn) closeBtn.addEventListener('click', closeMenu);
       if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+
+      
+      const modal = document.getElementById('imageModal');
+      const fullImg = document.getElementById('fullImage');
+      const modalClose = document.getElementById('modalClose');
+
+      document.querySelectorAll('.gallery-item img').forEach(img => {
+        img.addEventListener('click', () => {
+          modal.classList.add('open');
+          fullImg.src = img.src;
+        });
+      });
+
+      if (modalClose) {
+        modalClose.addEventListener('click', () => modal.classList.remove('open'));
+      }
+      if (modal) {
+        modal.addEventListener('click', (e) => {
+          if (e.target === modal) modal.classList.remove('open');
+        });
+      }
     });
   </script>
 </body>
