@@ -538,6 +538,63 @@ body.photos-page {
 }
 
 /* Contact Page */
+.direct-contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-link-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: #0284c7;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contact-link-item:hover {
+  background-color: #e0f2fe;
+  border-color: #bae6fd;
+}
+
+.link-icon {
+  font-size: 1.1rem;
+}
+
+.divider-text {
+  font-size: 0.85rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.divider-text::before,
+.divider-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 25%;
+  height: 1px;
+  background-color: #cbd5e1;
+}
+
+.divider-text::before {
+  left: 0;
+}
+
+.divider-text::after {
+  right: 0;
+}
+
 body.contact-page {
   background-color: #0c0a2b;
   min-height: 100vh;
