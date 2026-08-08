@@ -381,26 +381,6 @@ html, body {
 }
 
 /*For Phones */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px 15px;
-  }
-  .what-we-do {
-    padding: 40px 20px 60px 20px;
-  }
-  
-  .section-title {
-    font-size: 2.4rem;
-  }
-  
-  .section-description p {
-    font-size: 1.05rem;
-  }
-
-.brand-title {
-    font-size: 1.4rem; /* Shrinks the title slightly so it fits on small screens */
-    letter-spacing: 1px;
-  }
 
 /*Information Section beneath the "title" Page*/
 .what-we-do {
@@ -468,7 +448,7 @@ body.photos-page {
   display: grid !important;
   grid-template-columns: repeat(3, 1fr) !important;
   gap: 20px !important;
-    width: 100% !important;
+    width: 1200px !important;
 }
 
 .gallery-item {
@@ -493,8 +473,8 @@ body.photos-page {
 .photos-container img,
 .gallery-grid img,
 .gallery-item img {
-  width: 100% !important;
-  max-width: 100% !important;
+  width: 1200px !important;
+  max-width: none !important;
   height: 100% !important;
   max-height: 250px !important; 
   object-fit: cover !important;
