@@ -489,3 +489,14 @@ body.photos-page {
 .gallery-item img:hover {
   transform: scale(1.03);
 }
+
+.photos-container img,
+.gallery-grid img,
+.gallery-item img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  max-height: 250px !important; 
+  object-fit: cover !important;
+  display: block !important;
+}
