@@ -1,1 +1,68 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StuySkates - Photos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="photos-page">
 
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="logo.png" alt="Stuy Skates Logo" class="nav-logo-img">
+      </a>
+    </div>
+    <div class="nav-center">
+      <a href="index.html" class="brand-title">StuySkates</a>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+  </header>
+
+  <!-- Side Menu Overlay & Drawer -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+    <nav class="side-nav-links">
+      <a href="index.html">Home</a>
+      <a href="board.html">Board</a>
+      <a href="photos.html" class="active">Photos</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="photos-container">
+    <h1 class="photos-heading">Photos</h1>
+    <hr class="photos-divider">
+
+    <div class="photo-grid">
+   
+      <div class="photo-card">
+        <img src="2025-2026.jpg" alt="StuySkates Photo" class="gallery-img">
+      </div>
+
+      <!-- Add additional photo cards below by duplicating the block above -->
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const closeBtn = document.getElementById('closeBtn');
+      const sideMenu = document.getElementById('sideMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      function closeMenu() {
+        sideMenu.classList.remove('active');
+        menuOverlay.classList.remove('active');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+    });
+  </script>
+</body>
+</html>
