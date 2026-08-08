@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>StuySkates - Contact</title>
+  <title>StuySkates - Contact Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="photos-page">
+<body class="contact-page">
 
   <header class="navbar">
     <div class="nav-left">
@@ -21,16 +21,64 @@
     </div>
   </header>
 
-  <main class="photos-container">
-    <h1 class="gallery-title">Get in Touch</h1>
-    <p style="font-size: 1.2rem; line-height: 1.6; color: #e2e8f0;">
-      Have questions or want to join StuySkates? Reach out to us via email or Instagram!
-    </p>
-    <div style="margin-top: 30px; font-size: 1.1rem; line-height: 2;">
-      <p><strong>Email:</strong> <a href="mailto:stuyvesantskating@gmail.com" style="color: #60a5fa;">stuyskates@gmail.com</a></p>
-      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/stuyskates.official/" target="_blank" style="color: #60a5fa;">@stuyskates</a></p>
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+    <nav class="side-nav-links">
+      <a href="index.html">Home</a>
+      <a href="board.html">Board</a>
+      <a href="photos.html">Photos</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="contact-wrapper">
+    <div class="contact-card">
+      
+      <div class="contact-form-side">
+        <h1 class="contact-title">Contact us</h1>
+        
+        <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+          <div class="input-group">
+            <span class="input-icon">👤</span>
+            <input type="text" name="name" placeholder="Name" required>
+          </div>
+
+          <div class="input-group">
+            <span class="input-icon">✉️</span>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-group text-area-group">
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+          </div>
+
+          <button type="submit" class="send-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-image-side">
+        <img src="ContactUs.png" alt="Contact Illustration" class="contact-graphic">
+      </div>
+
     </div>
   </main>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const closeBtn = document.getElementById('closeBtn');
+      const sideMenu = document.getElementById('sideMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      function closeMenu() {
+        if (sideMenu) sideMenu.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+    });
+  </script>
 </body>
 </html>
