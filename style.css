@@ -452,9 +452,9 @@ body.photos-page {
 }
 
 .photos-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 120px 30px 60px 30px;
+  max-width: 1200px !important;
+  margin: 0 auto !important;
+  padding: 120px 30px 60px 30px !important;
 }
 
 .gallery-title {
@@ -465,24 +465,24 @@ body.photos-page {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 20px !important;
+    width: 100% !important;
 }
 
 .gallery-item {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  overflow: hidden;
-  border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.05);
+  width: 100% !important;
+    height: 250px !important;
+  overflow: hidden !important;
+  border-radius: 8px !important;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
   transition: transform 0.3s ease;
 }
 
