@@ -453,18 +453,25 @@ body.photos-page {
 
 .gallery-item {
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
     object-fit: cover !important;
     object-position: top center !important;
     cursor: pointer;
     transition: transform 0.2s ease;
+    aspect-ratio: auto !important; 
+    overflow: hidden !important;
+    border-radius: 8px !important;
+    background-color: rgba (255, 255, 255, 0.05) !important;
+
 }
 
 .gallery-item img {
   width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: contain !important;
   display: block !important;
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
