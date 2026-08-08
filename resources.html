@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StuySkates - Resources</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="resources-page">
 
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="logo.png" alt="Stuy Skates Logo" class="nav-logo-img">
+      </a>
+    </div>
+    <div class="nav-center">
+      <a href="index.html" class="brand-title">StuySkates</a>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+    <nav class="side-nav-links">
+      <a href="index.html">Home</a>
+      <a href="board.html">Board</a>
+      <a href="photos.html">Photos</a>
+      <a href="resources.html" class="active">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <main class="resources-wrapper">
+    
+    <div class="resources-header">
+      <h1 class="resources-main-title">Skating Resources & Tutorials</h1>
+    </div>
+
+    <div class="resources-grid">
+
+      <!-- Video 1 -->
+      <div class="resource-card">
+        <div class="resource-video-side">
+          <iframe 
+            src="https://www.youtube.com/watch?v=-kHNb-0uGqE" 
+            title="Skating Tutorial 1" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="resource-info-side">
+          <span class="resource-tag">Beginner</span>
+          <h2 class="resource-title">Basic Stance & Balance</h2>
+          <p class="resource-description">
+            Description of the video
+          </p>
+        </div>
+      </div> 
+
+      <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const closeBtn = document.getElementById('closeBtn');
+      const sideMenu = document.getElementById('sideMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      function closeMenu() {
+        if (sideMenu) sideMenu.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+    });
+  </script>
+</body>
+</html>
