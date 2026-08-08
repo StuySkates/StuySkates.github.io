@@ -659,10 +659,6 @@ body.contact-page {
   color: #0f172a;
 }
 
-/*.text-area-group {
-  align-items: flex-start;
-} */
-
 .contact-form textarea {
   resize: vertical !important;
   max-width: 100% !important;
