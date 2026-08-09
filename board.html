@@ -36,51 +36,47 @@
   </aside>
 
  <!-- Main Content Wrapper -->
-  <main style="max-width: 950px; margin: 0 auto; padding: 120px 20px 60px 20px;">
-    
-    <div style="text-align: center; margin-bottom: 40px;">
-      <h1 style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">StuySkates Board</h1>
-      <p style="font-size: 1.1rem; color: #cbd5e1; margin: 0;">Meet the team running the StuySkates club this year!</p>
+<main style="max-width: 1050px; margin: 0 auto; padding: 60px 20px;">
+  
+  <div style="text-align: center; margin-bottom: 40px;">
+    <h1 style="font-size: 2.5rem; font-weight: 700; color: #ffffff; margin-bottom: 12px;">StuySkates Board</h1>
+    <p style="font-size: 1.1rem; color: #cbd5e1; margin: 0;">Meet the team running the StuySkates club this year!</p>
+  </div>
+
+  <div class="board-grid-container">
+
+    <!-- Member 1: Darren -->
+    <div class="board-card-vertical">
+      <div class="board-card-banner">
+        <img src="Darren.jpg" alt="Darren">
+      </div>
+      <div class="board-card-body">
+        <span class="role-badge-green">Founding President</span>
+        <h2 class="board-card-name">Darren Dong</h2>
+        <p class="board-card-bio">
+          I'm Darren and i'm not very good at escape rooms, but my good friend Zia is awesome at them.
+        </p>
+        <a href="mailto:contact@stuyskates.com" class="board-card-btn">Contact Member ↗</a>
+      </div>
     </div>
 
-    <div class="board-container" style="display: flex; flex-direction: column; width: 100%; gap: 24px;">
-
-      <!-- Member 1: Darren -->
-      <div class="board-member-row" style="display: flex; flex-direction: row; width: 100%; gap: 20px; align-items: center;">
-        
-        <div class="board-photo-card" style="flex: 0 0 180px; width: 180px; height: 240px; border-radius: 20px; overflow: hidden; background-color: #ffffff; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);">
-          <img src="Darren.jpg" alt="Darren" style="width: 100%; height: 100%; max-width: 180px; max-height: 240px; object-fit: cover; display: block;">
-        </div>
-
-        <div class="board-text-card" style="flex: 1; height: 240px; background-color: #ffffff; border-radius: 20px; padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); box-sizing: border-box;">
-          <span class="role-badge" style="background-color: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; margin-bottom: 8px;">Founding President</span>
-          <h2 class="board-name" style="font-size: 1.6rem; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Darren Dong</h2>
-          <p class="board-bio" style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin: 0;">
-            I'm Darren and i'm not very good at escape rooms, but my good friend Zia is awesome at them.
-          </p>
-        </div>
-
+    <!-- Member 2: Zia -->
+    <div class="board-card-vertical">
+      <div class="board-card-banner">
+        <img src="Zia.png" alt="Zia">
       </div>
-
-      <!-- Zia -->
-      <div class="board-member-row" style="display: flex; flex-direction: row; width: 100%; gap: 20px; align-items: center;">
-        
-        <div class="board-photo-card" style="flex: 0 0 180px; width: 180px; height: 240px; border-radius: 20px; overflow: hidden; background-color: #ffffff; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);">
-          <img src="Zia.png" alt="Zia" style="width: 100%; height: 100%; max-width: 180px; max-height: 240px; object-fit: cover; display: block;">
-        </div>
-
-        <div class="board-text-card" style="flex: 1; height: 240px; background-color: #ffffff; border-radius: 20px; padding: 24px 32px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4); box-sizing: border-box;">
-          <span class="role-badge" style="background-color: #e0f2fe; color: #0369a1; font-size: 0.8rem; font-weight: 700; padding: 4px 12px; border-radius: 12px; text-transform: uppercase; margin-bottom: 8px;">Vice President</span>
-          <h2 class="board-name" style="font-size: 1.6rem; font-weight: 700; color: #0f172a; margin: 0 0 8px 0;">Zia Chan</h2>
-          <p class="board-bio" style="font-size: 0.95rem; color: #334155; line-height: 1.5; margin: 0;">
-            HI
-          </p>
-        </div>
-
+      <div class="board-card-body">
+        <span class="role-badge-green">I'm not really sure what my role is actually</span>
+        <h2 class="board-card-name">Zia Chan</h2>
+        <p class="board-card-bio">
+          HI
+        </p>
+        <a href="mailto:contact@stuyskates.com" class="board-card-btn">Contact Member ↗</a>
       </div>
-
     </div>
-  </main>
+
+  </div>
+</main>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
