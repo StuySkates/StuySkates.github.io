@@ -1018,25 +1018,24 @@ body.board-page {
   display: flex !important;
   flex-direction: row !important;
   width: 100% !important;
-  height: 280px !important; 
+  min-height: 280px !important; 
   gap: 24px !important;
-  align-items: stretch !important;
+  align-items: center !important;
 }
 
 .board-photo-card {
-  flex: 0 0 280px !important; 
-  width: 280px !important;
-  height: 280px !important;
+  flex: 0 0 160px !important; 
+  width: 1600px !important;
+  height: 160px !important;
   background-color: #ffffff !important;
-  border-radius: 24px !important;
+  border-radius: 20px !important;
   overflow: hidden !important; 
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
 }
 
 .board-photo-card img {
   width: 100% !important;
   height: 100% !important;
-  max-height: 280px !important;
   object-fit: cover !important; 
   object-position: center !important;
   display: block !important;
