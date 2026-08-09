@@ -1012,7 +1012,12 @@ body.resources-page {
 }
 
 .board-card-banner img.crop-top {
-  object-position: center 10% !important;
+    object-position: center 10% !important;
+}
+
+.board-card-banner img.darren-zoom {
+    transform: scale(1.8) !important;
+    object-position: center 30% !important;
 }
 
 .board-card-body {
