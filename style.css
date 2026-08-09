@@ -364,16 +364,16 @@ html, body {
 }
 
 .nav-card {
-  background-color: #e0f2fe !important; 
-  border-radius: 40px !important;        
-  height: 180px !important;
+  position: relative !important;
+  border: 4px solid #ffffff !important;   
+  border-radius: 40px !important;
+  padding: 14px !important;              
+  height: 200px !important;
   display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
   text-decoration: none !important;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
-  overflow: hidden !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4) !important;
+  box-sizing: border-box !important;
+  transition: transform 0.3s ease !important;
 }
 
 .nav-card:nth-child(3) {
@@ -384,11 +384,30 @@ html, body {
 }
 
 .nav-card-title {
+  position: absolute !important;
+  top: -20px !important;                
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  background-color: #0c0a2b !important;  
+  color: #ffffff !important;             
   font-family: system-ui, -apple-system, sans-serif !important;
-  font-size: 2.2rem !important;
-  font-weight: 800 !important;
-  color: #0c0a2b !important;
-  letter-spacing: -0.5px !important;
+  font-size: 1.8rem !important;
+  font-weight: 700 !important;
+  padding: 0 16px !important;            
+  white-space: nowrap !important;
+  z-index: 5 !important;
+}
+
+.nav-card-inner {
+  width: 100% !important;
+  height: 100% !important;
+  background-color: #e0f2fe !important;  
+  border-radius: 26px !important;        
+  transition: background-color 0.3s ease !important;
+}
+
+.nav-card:hover .nav-card-inner {
+  background-color: #bae6fd !important;
 }
 
 .nav-card:hover {
@@ -396,28 +415,14 @@ html, body {
 }
 
 @keyframes floatUpNDown {
-  0% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-12px); 
-  }
-  100% {
-    transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
 }
 
-.float-anim-1 {
-  animation: floatUpNDown 3.5s ease-in-out infinite !important;
-}
-
-.float-anim-2 {
-  animation: floatUpNDown 4s ease-in-out infinite 0.5s !important;
-}
-
-.float-anim-3 {
-  animation: floatUpNDown 3.8s ease-in-out infinite 1s !important;
-}
+.float-anim-1 { animation: floatUpNDown 3.5s ease-in-out infinite !important; }
+.float-anim-2 { animation: floatUpNDown 4s ease-in-out infinite 0.5s !important; }
+.float-anim-3 { animation: floatUpNDown 3.8s ease-in-out infinite 1s !important; }
 
 /*For Phones */
 
