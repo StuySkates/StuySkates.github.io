@@ -864,3 +864,50 @@ body.resources-page {
   line-height: 1.5;
   margin: 0;
 }
+
+.gear-img-side {
+  flex: 1.1;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  min-height: 250px;
+}
+
+.gear-img-side img {
+  max-width: 100%;
+  max-height: 220px;
+  object-fit: contain;
+}
+
+
+.price-badge {
+  align-self: flex-start;
+  background-color: #dcfce7;
+  color: #15803d;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.buy-link-btn {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 16px;
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.buy-link-btn:hover {
+  background-color: #0369a1;
+}
