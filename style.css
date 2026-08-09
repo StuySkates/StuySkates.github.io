@@ -1019,7 +1019,7 @@ body.resources-page {
 width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: 50% 85% !important; 
+  object-position: 50% 75% !important; 
   transform: scale(2.0) !important;     
   transform-origin: 50% 85% !important; 
 }
