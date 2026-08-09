@@ -1011,6 +1011,10 @@ body.resources-page {
   display: block !important;
 }
 
+.board-card-banner img.crop-top {
+  object-position: center 10% !important;
+}
+
 .board-card-body {
   padding: 24px 20px 28px 20px !important;
   display: flex !important;
