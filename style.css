@@ -974,3 +974,87 @@ body.resources-page {
 }
 
     /* Board Members Page */
+.board-grid-container {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 30px !important;
+  width: 100% !important;
+  max-width: 1050px !important;
+  margin: 0 auto !important;
+}
+
+.board-card-vertical {
+  width: 320px !important;
+  background-color: #f4f9ff !important;
+  border-radius: 24px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4) !important;
+}
+
+.board-card-banner {
+  width: 100% !important;
+  height: 220px !important;
+  overflow: hidden !important;
+}
+
+.board-card-banner img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 220px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+.board-card-body {
+  padding: 24px 20px 28px 20px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.role-badge-green {
+  background-color: #dcfce7 !important;
+  color: #15803d !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  padding: 6px 14px !important;
+  border-radius: 12px !important;
+  margin-bottom: 16px !important;
+  display: inline-block !important;
+}
+
+.board-card-name {
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  color: #0a0e27 !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.board-card-bio {
+  font-size: 0.95rem !important;
+  color: #475569 !important;
+  line-height: 1.5 !important;
+  margin: 0 0 24px 0 !important;
+}
+
+.board-card-btn {
+  background-color: #3b82f6 !important;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-size: 0.95rem !important;
+  font-weight: 700 !important;
+  padding: 12px 24px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+}
