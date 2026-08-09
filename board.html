@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>StuySkates - Board Members</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="board-page">
 
+  <!-- Header Navbar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <a href="index.html">
+        <img src="StuySkatesLogo.png" alt="Stuy Skates Logo" class="nav-logo-img">
+      </a>
+    </div>
+    <div class="nav-center">
+      <a href="index.html" class="brand-title">StuySkates</a>
+    </div>
+    <div class="nav-right">
+      <a href="contact.html" class="contact-btn">Contact</a>
+    </div>
+  </header>
+
+  <!-- Side Navigation Overlay & Drawer -->
+  <div class="menu-overlay" id="menuOverlay"></div>
+  <aside class="side-menu" id="sideMenu">
+    <button class="close-btn" id="closeBtn" aria-label="Close Menu">&times;</button>
+    <nav class="side-nav-links">
+      <a href="index.html">Home</a>
+      <a href="board.html" class="active">Board</a>
+      <a href="photos.html">Photos</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content Area -->
+  <main class="board-wrapper">
+    
+    <div class="board-header">
+      <h1 class="board-main-title">StuySkates Board</h1>
+      <p class="board-subtitle">Meet the team running the StuySkates club this year!</p>
+    </div>
+
+    <div class="board-container">
+
+      <!-- Board Member 1 -->
+      <div class="board-card">
+        <div class="board-card-left">
+          <img src="DarrenPhoto.jpg" alt="Member Name">
+        </div>
+        <div class="board-card-right">
+          <span class="role-tag">Founding President</span>
+          <h2 class="member-name">Darren Dong</h2>
+          <p class="member-bio">
+            I'm Darren Dong! And I'm not very good at escape rooms, but my good friend Zia is awesome at them.
+          </p>
+        </div>
+      </div>
+
+      </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const closeBtn = document.getElementById('closeBtn');
+      const sideMenu = document.getElementById('sideMenu');
+      const menuOverlay = document.getElementById('menuOverlay');
+
+      function closeMenu() {
+        if (sideMenu) sideMenu.classList.remove('active');
+        if (menuOverlay) menuOverlay.classList.remove('active');
+      }
+
+      if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+      if (menuOverlay) menuOverlay.addEventListener('click', closeMenu);
+    });
+  </script>
+</body>
+</html>
