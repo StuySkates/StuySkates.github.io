@@ -420,25 +420,6 @@ html, body {
 }
 
 /*For Phones */
-@media screen and (max-width: 600px) {
-  .nav-cards-grid {
-    grid-template-columns: 1fr !important;
-  }
-  
-  .nav-card:nth-child(3) {
-    grid-column: auto !important;
-    max-width: 100% !important;
-  }
-
-  .nav-card {
-    height: 140px !important;
-    border-radius: 30px !important;
-  }
-
-  .nav-card-title {
-    font-size: 1.8rem !important;
-  }
-}
 
 /*Information Section beneath the "title" Page*/
 .what-we-do {
