@@ -45,20 +45,25 @@
     <div class="board-container">
 
       <!-- Member 1 -->
-      <div class="board-member-row">
-        <div class="board-photo-card">
-          <img src="Darren.jpg" alt="Darren">
-        </div>
-        <div class="board-text-card">
-          <span class="role-badge"> Founding President</span>
-          <h2 class="board-name">Darren Dong</h2>
-          <p class="board-bio">
-            I'm Darren and i'm not very good at escape rooms, but my good friend Zia is awesome at them.
-          </p>
-        </div>
-      </div>
+  <div class="board-member-row" style="display: flex !important; flex-direction: row !important; width: 100% !important; max-width: 900px !important; margin: 0 auto 20px auto !important; gap: 20px !important; align-items: center !important;">
+  
+  <!-- LEFT: Rectangle Photo Box -->
+  <div class="board-photo-card" style="flex: 0 0 180px !important; width: 180px !important; height: 240px !important; border-radius: 20px !important; overflow: hidden !important; background: #fff !important;">
+    <img src="Darren.jpg" alt="Darren" style="width: 100% !important; height: 100% !important; max-width: 180px !important; max-height: 240px !important; object-fit: cover !important; display: block !important;">
+  </div>
 
-      <!-- Member 2 -->
+  <!-- RIGHT: Description Box -->
+  <div class="board-text-card" style="flex: 1 !important; height: 240px !important; background-color: #ffffff !important; border-radius: 20px !important; padding: 24px 32px !important; display: flex !important; flex-direction: column !important; justify-content: center !important; box-sizing: border-box !important;">
+    <span class="role-badge" style="color: #0369a1 !important; background: #e0f2fe !important; padding: 4px 12px !important; border-radius: 12px !important; font-weight: 700 !important; width: fit-content !important; margin-bottom: 8px !important;">Founding President</span>
+    <h2 class="board-name" style="color: #0f172a !important; margin: 0 0 8px 0 !important; font-size: 1.5rem !important;">Darren Dong</h2>
+    <p class="board-bio" style="color: #334155 !important; margin: 0 !important; line-height: 1.5 !important;">
+      I'm Darren and i'm not very good at escape rooms, but my good friend Zia is awesome at them.
+    </p>
+  </div>
+
+</div>
+
+      <!-- Member 2 
       <div class="board-member-row">
         <div class="board-photo-card">
           <img src="Zia.png" alt="Zia">
@@ -70,7 +75,7 @@
             HI
           </p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </main>
