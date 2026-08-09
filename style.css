@@ -1017,7 +1017,7 @@ body.resources-page {
 
 .board-card-banner img.darren-zoom {
     transform: scale(2.5) !important;
-    object-position: center 95% !important;
+    object-position: center bottom !important;
     transform-origin: center bottom !important;
 }
 
