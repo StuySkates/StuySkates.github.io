@@ -1011,7 +1011,7 @@ body.board-page {
   width: 100% !important;
   max-width: 1100px !important;
   margin: 0 auto !important;
-  gap: 32px !important;
+  gap: 24px !important;
 }
     
 .board-row {
@@ -1023,22 +1023,23 @@ body.board-page {
   align-items: center !important;
 }
 
-.board-photo-card {
-  flex: 0 0 160px !important; 
-  width: 1600px !important;
-  height: 160px !important;
-  background-color: #ffffff !important;
-  border-radius: 20px !important;
-  overflow: hidden !important; 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4) !important;
+.board-photo-box {
+  flex: 0 0 200px !important; 
+  width: 200px !important;
+  height: 200px !important;
+  background-color: #f8fafc !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0 !important;
+  overflow: hidden !important;
 }
 
-.board-photo-card img {
+.board-photo-box img {
   width: 100% !important;
   height: 100% !important;
   object-fit: cover !important; 
   object-position: center !important;
-  display: block !important;
 }
 
 .board-desc-card {
@@ -1056,15 +1057,15 @@ body.board-page {
 }
 
 .role-tag {
+  align-self: flex-start;
   background-color: #e0f2fe;
   color: #0284c7;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-weight: 700;
   padding: 4px 12px;
   border-radius: 12px;
   text-transform: uppercase;
-  margin-bottom: 12px;
-  letter-spacing: 0.5px;
+  margin-bottom: 8px;
 }
 
 .member-name {
