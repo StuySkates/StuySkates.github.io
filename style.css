@@ -325,10 +325,13 @@ html, body {
 
 
 .main-content {
-    position: relative; 
-    z-index: 4;
-    text-align: right;
-    margin-right: 10px;
+  position: relative !important;
+  z-index: 10 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  min-height: 80vh !important;
+  padding: 20px !important;
 }
 
 .main-title {
@@ -351,33 +354,69 @@ html, body {
   font-size: 2.5rem;
 }
 
-.logo-toggle-btn {
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline: none;
-    display: inline-block;
-    pointer-events: auto;
-    transition: transform 0.25s ease-in-out; 
-} 
-
-.main-logo {
-  width: 400px; 
-  max-width: 80vw;
-  height: auto;
-  display: block;
-  margin-left: auto; 
-  mix-blend-mode: multiply;
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); 
+.nav-cards-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(220px, 320px)) !important;
+  gap: 24px !important;
+  max-width: 700px !important;
+  width: 100% !important;
+  justify-content: center !important;
 }
 
-.main-logo:hover {
-  transform: scale(1.05);
+.nav-card {
+  background-color: #e0f2fe !important; 
+  border-radius: 40px !important;        
+  height: 180px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+  overflow: hidden !important;
 }
-    
-.hero-logo.is-spinning {
-  animation: spin360 1s ease-in-out;
+
+.nav-card:nth-child(3) {
+  grid-column: 1 / -1 !important;
+  max-width: 360px !important;
+  justify-self: center !important;
+  width: 100% !important;
+}
+
+.nav-card-title {
+  font-family: system-ui, -apple-system, sans-serif !important;
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: #0c0a2b !important;
+  letter-spacing: -0.5px !important;
+}
+
+.nav-card:hover {
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+@keyframes floatUpNDown {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px); 
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float-anim-1 {
+  animation: floatUpNDown 3.5s ease-in-out infinite !important;
+}
+
+.float-anim-2 {
+  animation: floatUpNDown 4s ease-in-out infinite 0.5s !important;
+}
+
+.float-anim-3 {
+  animation: floatUpNDown 3.8s ease-in-out infinite 1s !important;
 }
 
 /*For Phones */
