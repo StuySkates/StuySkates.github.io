@@ -1019,9 +1019,9 @@ body.resources-page {
 width: 100% !important;
   height: 100% !important;
   object-fit: cover !important;
-  object-position: 45% !important; 
-  transform: scale(2.0) !important;     
-  transform-origin: 45% !important; 
+  object-position: 53% !important; 
+  transform: scale(2.2) !important;     
+  transform-origin: 53% !important; 
 }
 
 .board-card-body {
